@@ -1,10 +1,10 @@
-# Personal Website Resume
+# Personal Resume Website
 
 Created by: John Morris
 
 Access Here: https://jmorr04.github.io/
 
-## SOURCES AND CREDITS:
+### SOURCES AND CREDITS:
 Template taken from Micah Munoz (access here: https://github.com/mgmunoz03/mgmunoz03.github.io), which is a modified version from a website made by Isabelle May (access here: https://github.com/ifmay/ifmay.github.io).
 
 For any questions on starting a personal website for resume, please contact imay2@zagmail.gonzaga.edu. 
