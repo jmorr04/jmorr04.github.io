@@ -1,0 +1,13 @@
+.wave span {
+  display: inline-block;
+  animation: wave 1.5s  3 ease-in-out;
+  animation-delay: calc(var(--i) * 0.1s);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}

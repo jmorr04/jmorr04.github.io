@@ -1,64 +1,836 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Morris - Resume</title>
-    <link rel="stylesheet" href="style.css">
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>John Morris's Personal Website </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/animations.css" />
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/MM.png" >
+   <!-- AOS (Animate on Scroll)
+	================================================== -->
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>John Morris</h1>
-            <p class="title">Electrical Engineering Student</p>
-            <p class="contact">
-                <a href="mailto:jmorris052004@gmail.com">jmorris052004@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/john-morris-09a1931a9/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/jmorr04" target="_blank">GitHub</a>
-            </p>
-        </header>
-        <section>
-            <h2>Summary</h2>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+	         <li><a class="smoothscroll" href="#about">About</a></li>
+		 <li><a class="smoothscroll" href="#resume">Resume</a></li>
+		 <li><a class="smoothscroll" href="#portfolio">Portfolio<a></li>
+		 <li><a class="smoothscroll" href="#volunteer">Volunteer</a></li>
+		 <li><a class="smoothscroll" href="#contact">Contact</a></li>
+		 
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <!-- Black overlay covering the whole screen -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1; pointer-events: none;"></div>
+
+      <div class="row banner" style="position: relative; z-index: 2;">
+         <div class="banner-text">
+            <h1 class="responsive-headline">John Morris</h1>
+            <h2 style="text-shadow: 0px 2px 5px black;"> "But as for me and my household, we will serve the LORD" Josh 24:15. </h2>
+            <h3 style="color:white;"> Electrical Engineering | Benedictine College </h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/john-morris-09a1931a9/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.github.com/jmorr04/"><i class = "fa fa-github"></i></a></li>
+               <li><a href="mailto:morr8745@ravens.benedictine.edu"><i class ="fa fa-envelope"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about" style="padding: 90px 0 72px; background: #f0f3f2">
+
+      <div class="row">
+	<div class = "row section-intro" style="margin-left: 100px; margin-right: 100px; max-width: 850px; position: relative; transform: translateX(7%);"> 
+	  <div class= "col-twelve">
+            <h4>About</h4>
+		 <hr>
+	     <div data-aos="fade-right" data-aos-duration="1000">
+               <img src="images/profilepic.jpg" alt="Profile Picture" style = "margin-top: 24px; max-width: 25%; border-radius: 18px;">
+	     </div> 
+	     <div class="eight columns push-1 add-bottom add-top" data-aos="fade-left" data-aos-duration="1000">    
+               <p style="font: 1.3em opensans-regular; line-height: 1.6em;">
+		       Hi, I’m John Morris, an Electrical Engineering student at <a href ="https://www.benedictine.edu"><u style = "color: black;">Benedictine College</u></a>.
+		       When I'm not running or in school, I spend time building the faith community on campus and leading men's groups. 
+		       I'm especially interested in expanding my skillset with software projects, learning about cloud services, and developing my programming skills. 
+		       On a cool evening, you’ll find me hanging with friends, having a campfire, and enjoying creation. 
+		       Reach out and let's connect!
+               </p>
+            </div>  
+	  </div> <!-- col-twelve end-->	  
+	  </div> <!--section intro end -->
+      </div> <!-- Row End-->
+
+      <div class="row about-content">
+
+         <div class="six columns tab-full " data-aos= "fade-up" data-aos-duration="1250">
+
+            <h3 style = "color: black; text-align: center;" >Profile</h3>
+		<div>
+		<p> 
+	 	I'm seeking a role in back-end development where I can apply my knowledge of cloud services to maintain robust systems 
+		with impressive uptime, increased performance, and thorough security. I'm equally excited about applying my web design skills
+		to make UI's easily navigable and to provide an excpetional user experience. 	 
+	 	</p>
+		</div>
+	   <ul class="info-list">
+               <li>
+                  <strong>Academic Focus:</strong>
+                  <span style="display: block; margin-top: 10px;">BS Computer Science</span>
+                  <span style="display: block; margin-top: 10px;">BA Spanish</span>
+		            <span style="display: block; margin-top: 10px;">BA Theology</span>
+                  <span style="display: block; margin-top: 10px;">Minor: Mathematics</span>
+               </li>
+               <li>
+                  <strong>Anticipated Graduation:</strong>
+                  <span>May 2026</span>
+               </li>
+
+            </ul> 
+	   <img style = "max-width:80%; height:auto; "alt="" src = "images/bcfront.jpg">
+         </div>
+
+         <div class="six columns add-bottom" data-aos= "fade-up" data-aos-duration="1250">
+
+            <h3 style = "color: black; text-align: center;" >Skills</h3>
+	    <div>
             <p>
-                Briefly introduce yourself: your experience, skills, or professional philosophy.
+  		As a strong and creative leader, I seek to build others up and emphasize their strengths while 
+		maintaining community involvement and inclusion.
+		I have experience applying programming to concrete projects inside and outside the classroom where I have developed
+		skills in database management, embedded programming, and front-end development.
+		Here is a list highlighting some of my technical skills:
+	    </p>
+	    </div>
+	    <ul class="skill-bars">
+               <li>
+                  <div class="progress percent90"><span>90%</span></div>
+                  <strong>HTML, CSS, JavaScript</strong>
+               </li>
+               <li>
+                  <div class="progress percent90"><span>90%</span></div>
+                  <strong>MySQL, PHP</strong>
+               </li>
+               <li>
+                  <div class="progress percent80"><span>80%</span></div>
+                  <strong>Java, C++ </strong>
+               </li>
+               <li>
+                  <div class="progress percent80"><span>80%</span></div>
+                  <strong>AWS Services</strong>
+               </li>
+               <li>
+                  <div class="progress percent60"><span>60%</span></div>
+                  <strong>C, ASM x86</strong>
+               </li>
+            </ul> <!-- /skill-bars -->    
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+	<!--Buttons -->
+	<div class = " row button-section">
+	   <div class="col-twelve">
+               <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact</a>
+               <a href="files/resume.pdf" title="Download Resume" class="button button-primary">Download Resume</a>
+            </div> 
+	</div>   
+   </section>
+	
+<!--============================================= Resume Section =================================================== -->
+<section id="resume" style="padding: 90px 0 72px; background: #fff;">
+	<div class = "row section-intro">
+		<div class = "col-twelve">
+			<h4> Resume </h4>
+			<hr>
+		</div>
+	</div>
+	<!---------- Work Experience ----------->
+	<div class = "col-twelve resume-header">
+		<h2>Experience</h2>
+	</div>
+	<div class = "row resume-timeline">
+		
+		<div class = "col-twelve">
+ 			<div class = "timeline-wrap">
+			    <div class = "timeline-block"> 
+	
+				<div class = "timeline-block" data-aos = "fade-up">
+					<div class = "timeline-ico">
+						<i class = "fa fa-phone"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>IT Intern</h3>
+						<p>May 2025 - August 2025</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Benedictine College</h3>
+						<p>Applied networking skills to resolve disruptions in the network. Used <b>Netscout</b> hardware to test connections and pinpoint the issues. 
+                     Extensively used <b>Microsoft Visio</b> to create network diagrams and document the network infrastructure.
+                     Designed a new system for assigning mailboxes to incoming students using <b>Excel</b> spreadsheets.
+                     Assisted in the setup and configuration of new computers and devices for faculty and staff.
+                     Resolved hardware and software issues when they arose.
+                  </p>
+					</div>
+				</div>
+				
+				<div class = "timeline-block" data-aos = "fade-up">
+					<div class = "timeline-ico">
+						<i class = "fa fa-map-marker"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>March for Life Coordinator</h3>
+						<p>October 2024 - January 2025</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Benedictine College</h3>
+						<p>Designed and distributed fliers using <b>Canva</b> to encourage student participation. 
+                     <b>Organized fundraisers</b> with local businesses to promote community involvement and financial support.
+                     Contacted churches in Washington D.C. to arrange for 100+ students to participate in worship services during the March for Life.
+                     Led students throughout the trip in <b>community prayer</b> and reflection, fostering a sense of unity and purpose.
+                  </p>
+					</div>
+				</div>
+				
+				<div class = "timeline-block" data-aos = "fade-up">
+					<div class = "timeline-ico">
+						<i class = "fa fa-keyboard-o"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>Computer Science Tutor</h3>
+						<p>Sept 2024 - December 2024</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Benedictine College</h3>
+						<p>Guided students through under-division coursework using <b>Python, C, and Java</b>. 
+                     Taught the importance of <b>critical thinking</b> to reach a solution.
+                     Worked with students to understand the underlying concepts, especially in data analysis 
+                     and math coursework such as <b>Calculus</b>.
+                  </p>
+					</div>	
+				</div>
+				    
+				<div class = "timeline-block" data-aos = "fade-up">
+					<div class = "timeline-ico">
+						<i class = "fa fa-cutlery"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>Crew Member</h3>
+						<p>August 2021 - August 2022</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Chipotle</h3>
+						<p>Served with <b>expedience</b>, improving customer satisfaction and reduced wait time.
+                     Valued <b>communication</b> with team members to ensure an orderly workflow and high productivity.
+                     Focused on building a <b>tight-knit work environment</b> and dependable service.
+                     Guided new team members in protocol and demonstrated advantageous techniques. 
+                  </p>
+					</div>
+				</div>
+		 	    </div> 
+			</div>
+		</div>
+			<!-- Education 0 -->
+			<div class = "col-twelve resume-header">
+				<h2>Education</h2>
+			</div>
+			<div class = "col-twelve">
+			    <div class = "timeline-wrap">    
+				<div class = "timeline-block" data-aos = "fade-up"> 
+					<div class = "timeline-ico">
+						<i class = "fa fa-book"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>Bachelor Degree</h3>
+						<p>August 2022 - May 2026</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Benedictine College</h3>
+						<p>While pursuing three degrees in <b>Computer Science, Spanish, and Theology</b>, 
+                     I find my time best spent investing in others and creating an outgoing, faith-filled, and positive environment.
+                     I am involved in <a href = "https://www.spo.org" style = "font-family: opensans-bold; color: rgba(0, 0, 0, 0.84);" >St. Paul's Outreach</a> where I encourage men in their faith and pursuit of God in their lives.
+                     I have participated for 4 years in <b>Cross Country and Track and Field</b>, with Personal Records of: 5k 15:29 and 8k 25:23.
+                     </p>
+					</div>
+				</div>
+		
+				<div class = "timeline-block" data-aos = "fade-up"> 
+					<div class = "timeline-ico">
+						<i class = "fa fa-book"></i>
+					</div>
+					<div class = "timeline-header">
+						<h3>High School Degree</h3>
+						<p>August 2018 - May 2022</p>
+					</div>
+					<div class = "timeline-content">
+						<h3>Holy Family High School</h3>
+						<p>Graduated with <b>Honors</b> while participating in Concert Band, Cross Country and Track and Field.
+                     I volunteered to <b>lead retreats</b> throughout each year encouraging community and fostering personal growth.
+                     I actively participated in Scouts of America and earned the rank of <b>Eagle Scout</b>.
+                  </p>
+					</div>
+				</div>
+			    </div>
+			</div>
+	</div>
+</section>
+<section id = "portfolio">
+   <h4> Portfolio </h4>
+   <h3 style = "text-align: center; padding-top: 20px; color:rgb(81, 80, 80)"> Hover + Click to Learn More!</h3>
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+               <!-- Proxy Server -->
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img style="max-width: 100%;" alt="" src="images/portfolio/proxy2.jpg" >
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Proxy URLs</h5>
+                              <p>Efficient Networking</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <!-- Future of Pacing  -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/drone2.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>The Future of Pacing</h5>
+                              <p>Embedded Systems
+                              </p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <!-- Website Portfolio -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/portfolio.png" >
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          			               <h5>Website Portfolio</h5>
+                              	<p>Front-end Development</p>
+          		   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+               
+               <!-- Loop Unrolling -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/LoopUnrolling.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Loop Unrolling</h5>
+                              <p>Compiler Optimization</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <!-- R Analysis -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/Rstudio.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Statistical Analysis</h5>
+                              <p>Statistical Analysis</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+               <!-- Senior Project -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/SeniorProject.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Senior Project</h5>
+                              <p>Software Engineering</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <!-- Visio Rack -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img class="project-img" src="images/portfolio/VisioRack.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Visio Rack Diagrams</h5>
+                              <p>Networking & MS Suite
+                              </p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <!-- Movie Database -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img class="project-img" src="images/portfolio/MovieDatabase.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Movies Recommender</h5>
+                              <p> Database Management</p>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+
+                  </div>
+               </div> <!-- item end -->
+
+
+            </div> <!-- portfolio-wrapper end -->
+
+            <h3 style="text-align: center; margin-bottom: 40px; margin-top: 20px;"> To see more of my projects...</h3>
+            <div class="row button-section" style="text-align: center;">
+               <div class="col-twelve">
+                  <a href="https://github.com/jmorr04" title="Visit My GitHub" class="button button-primary" style="font-size: 1.5em; padding: 1em 2em;">Visit My GitHub</a>
+               </div>         
+            </div>
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-swap.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Proxy Server</h4>
+		      		<p> Using Java to replicate the increased performance of a Proxy Server.
+                      By using Registries and Remote Tasks, the program retrievs website HTML and stores it in a local file.
+                      When the same URL is requested, the server checks the local cache first and returns the cached HTML if available.
+                      The project demonstrates the efficiency of caching and the benefits of using a Proxy Server for web requests.
+		      		</p>
+               <span class="categories"><i class="fa fa-tag"></i>Java, Remote Objects, Networking</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a> <!-- Make this go to a specific page once you have it up -->
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-flight.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>The Future of Pacing</h4>
+               <p>In this research project, our goal is to create an AI vision drone that paces track athletes in their workouts.
+                  We developed a machine learning model implemented in Python and Arduino that is trained off pictures taken by the drone.
+                  My part of the project was to make the drone take recurring pictures during flight, pass the data to the model, 
+                  and then process the results into usable flight instructions.
+                  I programmed the ESP-32 Camera module in C++ | Arduino to take pictures and run the model. 
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>C++, Arduino, Python, Embedded Systems</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-farkle.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Portfolio Website</h4>
+               <p>Developed a portfolio to display my resume and projects. 
+                  Styled using <a href="https://www.styleshout.com/free-templates/ceevee/" target="_blank">Ceevee</a> and <a href="https://www.styleshout.com/free-templates/kard/" target="_blank">Kard</a> templates from Styleshout.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>HTML, CSS, JavaScript</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-connect4.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Loop Unrolling</h4>
+               <p>In this project, I implemented a compiler optimization technique called loop unrolling in Java.
+                  The goal of the project was to find a <i>for</i> loop in a program and unroll it based on user input.
+                  The unrolling itself included parsing the loop into tokens, storing variables, and recreating the contents 
+                  of the loop without the original structure.
+                </p>
+               <span class="categories"><i class="fa fa-tag"></i>Java, Optimization</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-website.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>R Studio Project</h4>
+			      <p>Used Simple Linear Regression in R studio to predict the price of a lego set based off
+                  the number of pieces. The R^2 value of the model was 0.93 indicating a strong, positive relationship
+                  between the number of pieces and the price of the set.
+                  It would be interesting to continue research on this topic and see what other factors influence the price of a set.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>R, Linear Regression, Analytics</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/jmorr04.github.io" target="_blank">GitHub</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-lk.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Senior Design Project</h4>
+               <p>In this collaborative project we aimed to design 
+                  a program that... <i>Coming Soon!</i>
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i> Java, JavaScript, Teamwork</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a>
+               <span> | </span> <!-- Plain text separator -->
+               <a href="files/lkwriteup.pdf" target="_blank">Report</a> 
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+
+            <img class="scale-with-grid" src="images/portfolio/modals/m-compiler.png" alt="" />
+
+
+            <div class="description-box">
+               <h4>Visio Rack Diagrams</h4>
+               <p>While working with IT at my school, we documented the campus network using Microsoft Visio.
+                  We used detailed stencils from Cisco to create accurate represenations of the network infrastructure,
+                  including routers, switches, patch panels, UPS, etc. This also included using connectors to 
+                  reflect fiber connections that connect to other buildings on campus.
+                  The diagrams were used to help troubleshoot network issues and to plan for future upgrades.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>MS Visio, Networking</span>
+            </div>
+
+
+            <div class="link-box">
+               <!-- <a href="https://github.com/jmorr04/" target="_blank">GitHub</a> -->
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+      
+      </div><!-- modal-09 End -->
+<div id="modal-08" class="popup-modal mfp-hide">
+
+
+            <img class="scale-with-grid" src="images/portfolio/modals/m-spotify.png" alt="" />
+
+
+            <div class="description-box">
+               <h4>Movies Recommender</h4>
+               <p>In this project, I queried SakilaDB to suggest movies to a given customer.
+                  Each customer has a list of recently watched movies, and the progam uses that data to make recommendations
+                  for movies with the same genre or actors. The data is then displayed to the user in a table using simple in-line HTML.
+                  This project demonstrates the power of complex SQL queries to extract meaningful insights from a database.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>PHP, MySQL, HTML, Data Extraction</span>
+            </div>
+
+
+            <div class="link-box">
+               <a href="https://github.com/jmorr04/" target="_blank">GitHub</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+</div><!-- modal-10 End -->
+   
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+</section>
+
+<!-- Volunteer Section -->
+
+<section id = "volunteer">
+<div class="volunteer-section">
+   <div class="row section-intro">
+      <div class="col-twelve">
+         <h4>Volunteer</h4>
+         <hr>
+         <h3>Giving Back & Leading Change</h3>
+      </div>
+   </div>
+   <!-- Project 1 -->
+   <div class="row volunteer-project-right">
+      <div class="four columns">
+         <img src="images/Volunteer/SPO.jpg">
+      </div>
+      <div class="six columns volunteer-content" style="padding-left:40px;">
+         <h3>St. Paul's Outreach</h3>
+         <h1>August 2024 - Present</h1>
+         <p>Building a strong faith and communnity on our college campus through men's nights, small groups, and praise and worship.
+            The aim is to draw students closer to Christ by reaching out to them and forming relationships.
+            I have been involved in SPO for 4 years, and am living in the SPO household this year to better serve the community.
+         </p>
+      </div> 
+   </div>
+   <!-- Project 2 -->
+   <div class="row volunteer-project-left">
+      <div class="four columns">
+         <img src="images/Volunteer/SOLT.png">
+      </div>
+      <div class="six columns volunteer-content" style="padding-right:40px;">
+         <h3>Belize Missionary Volunteer</h3>
+         <h1>May 2024</h1>
+         <p>Worked with SOLT religious and native Belizians to serve the local communities
+            in Benque Viejo, Belize City, and San Pedro.
+            The work comprised of both material and spiritual service.
+            I helped construct an outdoor shelter for a local school, and led youth nights in the evenings.
+            The goal of the trip was to support the mission in Belize, bring the love of Christ, and grow in my own faith.
+         </p>
+      </div>
+   </div>
+   <!-- Project 3 -->
+   <div class="row volunteer-project-right">
+      <div class="four columns volunteer-img">
+         <img src="images/Volunteer/CIC2.jpg">
+      </div>
+      <div class="six columns volunteer-content" style="padding-left:40px;">
+         <h3>Christ in the City</h3>
+         <h1>June 2023</h1>
+         <p>Served as a missionary in Boston, MA spending time making personal relationships
+            with the homeless and those living on the streets. 
+            I spent time listening and sharing stories to help ease the poverty of loneliness and isolation.
+            This ministry of presence is a strong way to overcome the stigma of homelessness and
+            material poverty.    
+         </p>
+      </div>
+   </div>
+   <!-- Project 4 -->
+   <div class="row volunteer-project-left">
+      <div class="four columns">
+         <img src="images/Volunteer/BCYO.jpg">
+      </div>
+      <div class="six columns volunteer-content" style="padding-right:40px;">
+         <h3>Benedictine College Youth Outreach</h3>
+         <h1>August 2022 - April 2023</h1>
+         <p>Lead youth retreats centered on the Sacraments of the Catholic Church.
+            Worked with a team of college students to plan and execute the retreats.
+            The goal of each retreat was to help high school students prepare for the Sacraments
+            and grow in their faith life.
+         </p>
+      </div>
+   </div>
+</div>
+</section>
+<section id = "contact">
+   <div class = "row section-intro" style = "margin-bottom: 0px;">
+      <div class = "col-twelve">
+         <h4> Contact </h4>
+         <hr>
+         <h3> Let's connect! </h3>
+      </div>
+   </div>
+       <div class="row contact-info">
+         <div class="col-four tab-full">
+            <div class="icon">
+               <i class="fa fa-github"></i>
+            </div>
+            <h5>View Projects At</h5>
+            <a href="https://github.com/jmorr04" target="_blank">GitHub Profile</a>
+         </div>
+         <div class="col-four tab-full collapse">
+            <div class="icon">
+               <i class="icon-mail"></i>
+            </div>
+            <h5>Email Me At</h5>
+            <a href="mailto:morr8745@ravens.benedictine.edu" target="_blank">morr8745@ravens.benedictine.edu</a>
             </p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill One</li>
-                <li>Skill Two</li>
-                <li>Skill Three</li>
-                <li>Skill Four</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Job Title — Company Name</h3>
-                <span class="date">Month Year – Month Year</span>
-                <ul>
-                    <li>Responsibility or achievement one.</li>
-                    <li>Responsibility or achievement two.</li>
-                </ul>
+         </div>	      
+	 <div class="col-four tab-full collapse">
+            <div class="icon">
+               <i class="fa fa-linkedin"></i>
             </div>
-            <!-- Add more jobs as needed -->
-        </section>
-        <section>
-            <h2>Education</h2>
-            <div class="education">
-                <h3>Degree — Institution</h3>
-                <span class="date">Year</span>
-            </div>
-            <!-- Add more education as needed -->
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project Name:</strong> Short description. <a href="#">Link</a></li>
-                <li><strong>Another Project:</strong> Short description. <a href="#">Link</a></li>
+            <h5>Let's Connect</h5>
+            <a href="https://www.linkedin.com/in/john-morris-09a1931a9/" target="_blank">LinkedIn Profile</a>
+
+         </div>
+   <div class = "row contact-info">
+      <!-- <div class = "col-twelve" style = "text-align: center;">
+         <p class = "lead">I would love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p>
+      </div> -->
+
+   </div>
+</section>
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="copyright">
+               <li>Edited by John Morris</li>
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
             </ul>
-        </section>
-    </div>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/spin.js"></script>
+   <script src="js/wave.js"></script>
+
+   <script src="js/init.js"></script>
+<script> AOS.init();</script>
 </body>
+
 </html>
